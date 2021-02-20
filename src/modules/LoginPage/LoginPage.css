@@ -1,0 +1,22 @@
+.login-page-component-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #ced2d9;
+}
+
+.login-card {
+  width: 500px;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-input {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+}

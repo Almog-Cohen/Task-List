@@ -1,0 +1,22 @@
+.cards-container {
+  display: flex;
+  margin: 10px 0;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ced2d9;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info-section {
+  margin: 0 5px;
+}
+
+.cards-container label,
+.user-info-section label {
+  font-weight: bold;
+}
