@@ -11,14 +11,15 @@ import ProjectsInfoPage from "./modules/InfoPage/InfoPage";
 import { useSelector } from "react-redux";
 
 function App() {
-  const isLoggedIn = useSelector(state => state.auth.userData)
+  const isLoggedIn = useSelector((state) => state.auth.userData);
+  console.log(isLoggedIn);
 
   return (
     <div className="app-container">
       <Router>
         <Switch>
           <Route path="/login">
-            <LoginPage />
+            {isLoggedIn ? <Redirect to="/info" /> : <LoginPage />}
           </Route>
           <Route path="/info">
             {/* projects info page is available only after login */}
